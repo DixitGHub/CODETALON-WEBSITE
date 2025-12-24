@@ -297,6 +297,24 @@ margin-bottom: 20px;
     padding-left: 80px;
 }
 
+@media screen and (max-width:800px){
+    .footer__three{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.footer__three--dev{
+    padding-left: 0;
+    text-align: center;
+}
+
+.footer__three--s1{
+    padding-left: 80px;
+}
+
+}
+
 #topBtn {
     position: fixed;
     bottom: 120px;
@@ -726,3 +744,4 @@ html {
         scroll-margin-top: 100px;
     }
 }
+
