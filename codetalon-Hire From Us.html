@@ -40,111 +40,26 @@
 
     </div>
 
-    <!-- header-section -->
-    <div class="quote">
-        <div>
-            <h1>Learn. Code. Launch <br> Your IT Career.</h1>
-            <p>Practical coding skills, live projects and placement supports</p>
-            <a href="codetalon-Contact Now.html" class="quote__button">ENROLL NOW</a>
-        </div>
+  <!-- Hire From Us-section -->
+<div class="hire-from-us">
+    <h2>Hire From Us</h2>
+    <p>Looking to hire skilled and job-ready candidates? Get in touch with CodeTalon.</p>
 
-        <div>
-            <img src="images/course_image.png" alt="no image" width="400px">
-        </div>
+    <form class="hire-form" id="HireForm">
+        <input type="text" name="company_name" placeholder="Company Name" required>
+        <input type="text" name="contact_person" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Email Address" required>
+        <input type="tel" name="phone" placeholder="Phone Number" required>
+        <input type="text" name="hiring_requirement" placeholder="Hiring Requirement (Role / Skills)">
+        <textarea name="message" placeholder="Message"></textarea>
+        <button type="submit">Submit Requirement</button>
+        <input type="hidden" name="time" id="hireTime">
 
-    </div>
+    </form>
+</div>
 
-    <!-- courses-section -->
-    <div class="courses">
-        <h1>Our Courses</h1>
-        <div class="course-card">
-            <div class="course-card__para">
-                <h3>Full Stack Web Development Course</h3>
-                <p>Master front-end and back-end development with hands-on projects and real-world applications. Become
-                    job-ready with in-demand full stack skills.</p>
-                <a href="codetalon-Master Courses.html#MERN" class="course-card__btn">Learn More</a>
-            </div>
 
-            <div class="course-card__para">
-                <h3>Cloud Data Engineer Course</h3>
-                <p>Master cloud platforms, data pipelines and analytics with hands-on projects. Gain real-world skills
-                    to become a job-ready Cloud Data Engineer.</p>
-                <a href="codetalon-Master Courses.html#CDE" class="course-card__btn">Learn More</a>
-            </div>
-
-            <div class="course-card__para">
-                <h3>Software Testing QA Course</h3>
-                <p>Master automation testing using Selenium with Java through hands-on frameworks and real-world test
-                    scenarios. Become job-ready with in-demand QA automation skills.</p>
-                <a href="codetalon-Master Courses.html#QA" class="course-card__btn">Learn More</a>
-            </div>
-
-            <div class="course-card__para">
-                <h3>Front-End Web Development Course</h3>
-                <p>Master front-end web development by building responsive, real-world websites and user interfaces
-                    using modern technologies.</p>
-                <a href="codetalon-Master Courses.html#FE" class="course-card__btn">Learn More</a>
-            </div>
-
-            <div class="course-card__para">
-                <h3>Oracle SQL Developer Course</h3>
-                <p>Master Oracle SQL by writing real-world queries and working with industry-standard databases. Become
-                    job-ready with in-demand SQL skills.</p>
-                <a href="codetalon-Master Courses.html#ORACLE" class="course-card__btn">Learn More</a>
-            </div>
-
-            <div class="course-card__para">
-                <h3>Snowflake Data Engineer Course</h3>
-                <p>Master Snowflake data engineering through hands-on projects and real-world data applications. Become
-                    job-ready with in-demand cloud data skills.</p>
-                <a href="codetalon-Master Courses.html#SDE" class="course-card__btn">Learn More</a>
-            </div>
-
-            <div class="course-card__para">
-                <h3>ETL Testing Course</h3>
-                <p>Master ETL testing through hands-on projects and real-world data validation scenarios. Become
-                    job-ready with in-demand data testing skills.</p>
-                <a href="codetalon-Master Courses.html#ETL" class="course-card__btn">Learn More</a>
-            </div>
-
-            <div class="course-card__para">
-                <h3>IT Support / System Admin Course</h3>
-                <p>Master IT support and desktop support or system admin skills through hands-on troubleshooting and
-                    real-world scenarios. Become job-ready with in-demand technical support skills.</p>
-                <a href="codetalon-Master Courses.html#ITS" class="course-card__btn">Learn More</a>
-            </div>
-
-        </div>
-    </div>
-
-    <!-- vision-section -->
-    <div class="mission">
-        <h1>Our Vision & Mission</h1>
-        <p class="mission__p1">Our Vision is to empower the next generation of tech innovators to transform their
-            passion into real-world impact. <br>
-            We envision a future where young minds turn curiosity into skills and ideas into solutions. <br><br>
-            Our Mission is to provide hands-on, industry-ready training that equips learners with practical skills and
-            confidence. <br>
-            We focus on building a mindset of innovation, problem-solving and continuous growth. <br> <br>
-            At CODETALON Academy, we bridge the gap between learning and career success. <br>
-            We aim to prepare every student to launch a thriving tech career and <br> shape the future of technology.
-        </p>
-
-        <p class="mission__p2">A calm and focused coder with a dedicative mindset and practice will become the best
-            <b>IT PROFESSIONAL.</b>
-        </p>
-        <img class="mission__img" src="images/logo_st.png" alt="no image">
-        <h2 class="mission__h2">“Obstacles don’t stop an eagle — they teach it how to fly higher. <br> CODETALON
-            prepares you to soar in the IT industry.”</h2>
-    </div>
-
-    <!-- contact-now -->
-    <div class="contact">
-        <h1 class="contact-text">Level up your career through hands-on learning</h1>
-        <button class="quote__button">CONTACT NOW</button>
-    </div>
-
-    <!-- footer-section -->
+<!-- footer-section -->
     <div class="footer">
         <div class="footer__one">
 
@@ -219,9 +134,17 @@
 
         </div>
 
-
+            
 
         <button id="topBtn"><i class="fa-solid fa-angles-up" style="color: black;"></i></button>
+
+        <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+
+        <script>
+            (function () {
+                emailjs.init("xjODTAJgi_baOlI9U");
+            })();
+        </script>
 
         <script src="script.js"></script>
 
