@@ -183,6 +183,16 @@ body {
     margin-left: 600px;
 }
 
+@media screen and (max-width:800px){
+    .mission__img{
+        margin-left: 0;
+    }
+
+    .mission{
+        height: 100%;
+        width: 100%
+}
+
 .contact {
     /* background: linear-gradient(to right, gray, lightgray ); */
     height: 400px;
@@ -759,6 +769,7 @@ html {
         scroll-margin-top: 100px;
     }
 }
+
 
 
 
