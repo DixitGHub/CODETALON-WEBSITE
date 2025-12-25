@@ -189,8 +189,7 @@ body {
     }
     .mission{
         height: 100%;
-        width: 100%;
-}
+    }
 }   
 
 .contact {
@@ -219,7 +218,7 @@ body {
         font-size: xx-small;
         /* reduce text size */
         text-align: center;
-        margin-top: 700px;
+        margin-top: 300px;
     }
 
 }
@@ -769,6 +768,7 @@ html {
         scroll-margin-top: 100px;
     }
 }
+
 
 
 
