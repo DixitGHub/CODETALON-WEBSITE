@@ -187,11 +187,11 @@ body {
     .mission__img{
         margin-left: 0;
     }
-
     .mission{
         height: 100%;
-        width: 100%
+        width: 100%;
 }
+}   
 
 .contact {
     /* background: linear-gradient(to right, gray, lightgray ); */
@@ -769,6 +769,7 @@ html {
         scroll-margin-top: 100px;
     }
 }
+
 
 
 
