@@ -462,7 +462,7 @@ padding-top: 10px;
     flex-direction: column;
 }
 
-.cctools-covered{                                            
+.cc-tools-covered{                                            
     display: flex;
     flex-direction: column;
 }
@@ -784,6 +784,7 @@ html {
         scroll-margin-top: 100px;
     }
 }
+
 
 
 
