@@ -40,7 +40,7 @@ body {
     color: #F79526;
 }
 
-@media screen and (max-width:1200px) {
+@media screen and (max-width:800px) {
     .navbar__categories {
         display: none;
     }
@@ -58,6 +58,64 @@ body {
 
 .navbar__contact a:hover {
     color: white;
+    cursor: pointer;
+}
+
+#menuicon{
+    display: none;
+}
+@media screen and (max-width:600px) {
+    #menuicon{
+        display: block;
+        padding-top: 40px;
+        cursor: pointer;
+    }
+}
+
+.sidenav{
+display: flex;
+flex-direction: column;
+gap: 40px;
+background-color:#F79526;
+padding: 10px;
+position: fixed;
+top: 0;
+height: 100vh;
+width: 50%;
+z-index: 20;
+text-align: center;
+right: -70%;
+transition: 1s;
+}
+
+.sidenav a{
+text-decoration: none;
+color: black;
+align-self: center;
+}
+
+.sidenav a:hover{
+    color: white;
+}
+
+.sd-navbar__contact{
+    width: fit-content;
+    color: black;
+    background-color: whitesmoke;
+    padding: 10px;
+    cursor: pointer;
+    border: white solid 1px;
+    border-radius: 10px;
+}
+
+.sd-navbar__contact:hover{
+    color: white;
+    background-color: #F36C21;
+}
+
+.closenav{
+    text-align: right;
+    padding: 20px;
     cursor: pointer;
 }
 
@@ -187,13 +245,15 @@ body {
     .mission__img{
         margin-left: 0;
     }
+
     .mission{
         height: 100%;
-    }
-    .mission__h2{
-    font-size: medium;
 }
-}   
+
+.mission__h2{
+    font-size:medium;
+}
+}
 
 .contact {
     /* background: linear-gradient(to right, gray, lightgray ); */
@@ -784,19 +844,3 @@ html {
         scroll-margin-top: 100px;
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
