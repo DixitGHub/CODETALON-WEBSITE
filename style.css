@@ -72,7 +72,7 @@ body {
     }
 
     .quote img {
-        width: 600px;
+        width: 400px;
     }
 }
 
@@ -759,5 +759,6 @@ html {
         scroll-margin-top: 100px;
     }
 }
+
 
 
