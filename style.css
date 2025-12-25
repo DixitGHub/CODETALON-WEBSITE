@@ -191,7 +191,7 @@ body {
         height: 100%;
     }
     .mission__h2{
-    font-size: xx-small;
+    font-size: small;
 }
 }   
 
@@ -769,6 +769,7 @@ html {
         scroll-margin-top: 100px;
     }
 }
+
 
 
 
