@@ -844,9 +844,8 @@ html {
   scroll-behavior: smooth;
 }
 
-    #MERN,#CDE,#QA,#FE,#ORACLE,#SDE,#ETL,#ITS,#REACT,#ITSUPPORT{
+#MERN,#CDE,#QA,#FE,#ORACLE,#SDE,#ETL,#ITS,#REACT,#ITSUPPORT{
         scroll-margin-top: 100px;
     }
-
 
 
