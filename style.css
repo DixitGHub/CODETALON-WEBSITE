@@ -844,9 +844,9 @@ html {
   scroll-behavior: smooth;
 }
 
-@media screen and (min-width:800px) {
     #MERN,#CDE,#QA,#FE,#ORACLE,#SDE,#ETL,#ITS,#REACT,#ITSUPPORT{
         scroll-margin-top: 100px;
     }
-}
+
+
 
