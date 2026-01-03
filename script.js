@@ -118,3 +118,14 @@ sidenav.style.right = 0;
 closenav.addEventListener("click", function(){
   sidenav.style.right = "-70%"
 })
+
+//file chosen
+  const fileInput = document.getElementById("paymentImage");
+  const fileName = document.querySelector(".file-name");
+
+  fileInput.addEventListener("change", function () {
+    fileName.textContent = this.files.length
+      ? this.files[0].name
+      : "No file chosen";
+  });
+
