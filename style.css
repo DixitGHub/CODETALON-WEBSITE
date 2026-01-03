@@ -868,6 +868,7 @@ body {
     padding: 20px 20px;
     text-align: center;
     font-family: "Poppins", sans-serif;
+    display: flex;
 }
 
 .paid-contact-now h2 {
@@ -947,6 +948,16 @@ body {
   color: #555;
 }
 
+@media screen and (min-width:800px){
+    .paid-contact-now img{
+        width: 350px;
+    }
+
+    .paid-contact-now{
+        justify-content: space-evenly;
+        align-items: center;
+    }
+}
 /* When the user clicks the link, the browser will open page2.html and scroll directly to the div with the matching ID. */
 html {
     scroll-behavior: smooth;
