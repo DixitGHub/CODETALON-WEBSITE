@@ -119,13 +119,35 @@ closenav.addEventListener("click", function(){
   sidenav.style.right = "-70%"
 })
 
-//file chosen
-  const fileInput = document.getElementById("paymentImage");
-  const fileName = document.querySelector(".file-name");
 
-  fileInput.addEventListener("change", function () {
-    fileName.textContent = this.files.length
-      ? this.files[0].name
-      : "No file chosen";
+
+ //Paid Contact Now Form - EmailJS Integration
+const PaidContactForm = document.getElementById("PaidContactForm");
+
+if (PaidContactForm) {
+  PaidContactForm.addEventListener("submit", function (e) {
+    e.preventDefault();
+
+      // 👇 SET TIME HERE
+    document.getElementById("contactTime").value =
+      new Date().toLocaleString("en-IN", {
+        dateStyle: "medium",
+        timeStyle: "short"
+      });
+
+    emailjs.sendForm(
+      "service_dfydt8n",    // Replace with your EmailJS Service ID
+      "template_fivvmwi",   // Replace with your EmailJS Template ID
+      this
+    ).then(
+      function () {
+        alert("Thank you! CodeTalon team will contact you soon.");
+        PaidContactForm.reset();
+      },
+      function (error) {
+        alert("Failed to send message. Please try again.");
+        console.error("EmailJS Error:", error);
+      }
+    );
   });
-
+}

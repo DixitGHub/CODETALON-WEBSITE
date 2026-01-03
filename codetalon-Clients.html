@@ -60,10 +60,10 @@
     <div class="paid-contact-now">
         <div class="container">
             <h2>Codetalon Clients</h2>
-            <p>Clients can give your chosen course, allocated time and payment details.  (Time allocated after
+            <p>Clients can give your chosen course, allocated time and payment details. (Time allocated after
                 your discussion with CodeTalon team)</p>
 
-            <form class="paid-contact-form" id="ContactForm">
+            <form class="paid-contact-form" id="PaidContactForm">
                 <input type="text" name="name" placeholder="Your Name" required>
                 <input type="email" name="email" placeholder="Your Email" required>
                 <input type="text" name="phone" placeholder="Phone Number" required>
@@ -91,13 +91,13 @@
                     <option value="newyear_2026">New-Year - 20%</option>
                     <option value="oracle_ws_04012026">ws_04012026 - 50%</option>
                 </select>
-                <div class="file-upload">
-                    <label for="paymentImage" class="file-label">
-                        Choose Payment Image
-                    </label>
-                    <input type="file" id="paymentImage" name="paymentImage">
-                    <span class="file-name">No file chosen</span>
-                </div>
+                <select name="upi_app">
+                    <option value="" disabled selected>UPI App Used</option>
+                    <option value="Google Pay">Google Pay</option>
+                    <option value="Paytm">Paytm</option>
+                    <option value="SuperMoney">SuperMoney</option>
+                    <option value="Other">Other</option>
+                </select>
 
                 <button type="submit">Submit</button>
                 <input type="hidden" name="time" id="contactTime">
@@ -196,7 +196,7 @@
 
         <script>
             (function () {
-                emailjs.init("xjODTAJgi_baOlI9U");
+                emailjs.init("LBrO2elVU5YUA8XNh");
             })();
         </script>
 
