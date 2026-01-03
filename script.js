@@ -129,7 +129,7 @@ if (PaidContactForm) {
     e.preventDefault();
 
       // 👇 SET TIME HERE
-    document.getElementById("contactTime").value =
+    document.getElementById("PaidContactTime").value =
       new Date().toLocaleString("en-IN", {
         dateStyle: "medium",
         timeStyle: "short"
