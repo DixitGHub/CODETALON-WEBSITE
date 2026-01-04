@@ -865,7 +865,7 @@ body {
 
 .paid-contact-now {
     background-color: whitesmoke;
-    padding: 20px 20px;
+    padding: 18px 20px;
     text-align: center;
     font-family: "Poppins", sans-serif;
     display: flex;
@@ -873,13 +873,13 @@ body {
 }
 
 .paid-contact-now h2 {
-    font-size: 30px;
+    font-size: 28px;
     margin-bottom: 8px;
 }
 
 .paid-contact-now p {
     font-size: 16px;
-    margin-bottom: 25px;
+    margin-bottom: 22px;
     color: grey;
 }
 
@@ -894,7 +894,7 @@ body {
 .paid-contact-form input,
 .paid-contact-form select,
 .paid-contact-form textarea {
-    padding: 8px 12px;
+    padding: 6px 12px;
     border: 1px solid lightgrey;
     border-radius: 8px;
     font-size: 14px;
